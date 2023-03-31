@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:10px
+        }
+        .card{
+          height: 200px;
+          background-color: aqua;
+        }
+        @media only screen and (max-width:767px) {
+            .container{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap:20px;
+        }
+        .card{
+          height: 200px;
+          background-color: aqua;
+        }
+        }
+        @media only screen and (min-width:768px) and (max-width:1023px) {
+            .container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:20px;
+        }
+        .card{
+          height: 200px;
+          background-color: aqua;
+        }
+        }
+        @media only screen and (min-width:1024px) and (max-width:1279px) {
+            .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:20px;
+        }
+        .card{
+          height: 200px;
+          background-color: aqua;
+        }
+        }
+        @media only screen and (min-width:1280px) and (max-width:1439px) {
+            .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:20px;
+        }
+        .card{
+          height: 200px;
+          background-color: aqua;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi inventore dolorum totam nostrum, dolorem maxime, doloribus fugiat quos atque quae sint exercitationem commodi doloremque unde quo vel nesciunt quasi. Tenetur aperiam, rerum recusandae, aut totam unde quo consectetur exercitationem esse deleniti hic expedita nisi aspernatur nesciunt dolorum dicta voluptates tempore facere quia est nemo quas! Provident porro nobis eaque quod quibusdam libero. Molestias at, nemo qui pariatur sunt ab eos ipsum minus, explicabo autem quam quas. Non aspernatur fuga quidem quo saepe, est doloremque minus suscipit ipsum consequatur odit ipsa. Rem voluptatem ad quas repellat dolor voluptas. Explicabo, laudantium est.</p> -->
+        </div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+</body>
+</html>

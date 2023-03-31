@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="shop.css">
+    <script src="shop.js"></script>
+</head>
+<body>
+    <div class="bo">
+    <table border="2">
+        <tr>
+            <td>sr.no</td>
+            <td>input</td>
+            <td>price</td>
+            <td colspan="3">quantity</td>
+            <td>total</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Shirt</td>
+            <td>299</td>
+            <td><input class="in" id="sh1" value="0" readonly></td>
+            <td><input class="in" type="button" value="+" onclick="addshirt(),total()"></td>
+            <td><input class="in" type="button" value="-" onclick="removeshirt(),total()"></td>
+            <td><input class="in" id="sh2" value="0" readonly></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Pant</td>
+            <td>499</td>
+            <td><input class="in" id="pant1" value="0" readonly></td>
+            <td><input class="in" type="button" value="+" onclick="addpant(),total()"></td>
+            <td><input class="in" type="button" value="-" onclick="removepant(),total()"></td>
+            <td><input class="in" id="pant2" value="0" readonly></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Shoes</td>
+            <td>399</td>
+            <td><input class="in" id="shoes1" value="0" readonly></td>
+            <td><input class="in" type="button" value="+" onclick="addshoes(),total()"></td>
+            <td><input class="in" type="button" value="-" onclick="removeshoes(),total()"></td>
+            <td><input class="in" id="shoes2" value="0" readonly></td>
+        </tr>
+        <tr>
+            <td colspan="2">Grand Total</td>
+            <td colspan="5"><input id="tot" value="0" readonly></td>
+        </tr>
+    </table><br><br>
+    <div class="but" >
+    <input type="button" class="button" value="Check out" onclick="display()">
+    </div><br>
+    <div class="jadu" id="jad">
+        <h3>Payment Option</h3>
+      <label for="amount">Your amount is</label>
+      <input id="amo" value="0" readonly><br>
+      <input type="button" class="on" value="Cash" onclick="cash()">
+      <input type="button" class="on" value="Online" onclick="online()"><br><br>
+      <div id="ka" style="display: none;">
+      <label>Enter amount</label>
+      <input type="text" id="ca" oninput="pay()"><br><br>
+      <input id="ne" style="display: none;border: 0px;width: 30px;margin-left: auto;margin-right: auto;" >
+       <h3 style="display: none;" id="n">please payRupee online</h3>
+      </div>
+    </div>
+</div>
+</body>
+</html>
